@@ -1,0 +1,106 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+.container-fluid-custom {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+@media (max-width: 1200px) {
+  .container-fluid-custom {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container-fluid-custom {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-fluid-custom {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .container-fluid-custom {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+#myCarousel .carousel-inner {
+  height: 500px;
+}
+
+#myCarousel .carousel-item {
+  height: 100%;
+  overflow: hidden;
+}
+
+#myCarousel .carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#myCarousel .carousel-control-prev,
+#myCarousel .carousel-control-next {
+  width: 5%;
+  opacity: 0.3;
+  transition: opacity 0.15s ease-in-out;
+}
+
+#myCarousel .carousel-control-prev:hover,
+#myCarousel .carousel-control-next:hover {
+  opacity: 0.7;
+}
+
+#myCarousel .carousel-control-prev-icon,
+#myCarousel .carousel-control-next-icon {
+  background-image: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#myCarousel .carousel-control-prev-icon::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%236c757d" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/></svg>');
+  width: 24px;
+  height: 24px;
+}
+
+#myCarousel .carousel-control-next-icon::before {
+  content: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="%236c757d" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+  width: 24px;
+  height: 24px;
+}
+
+.fw-bold {
+  font-family: "DynaPuff", cursive;
+}
+
+.navbar-nav .nav-link {
+  font-family: "DynaPuff", cursive;
+}
+
+p {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.card-text {
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.container-fluid-custom .col-md-8 p {
+  text-align: justify;
+}
